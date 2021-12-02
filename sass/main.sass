@@ -1,0 +1,271 @@
+@import "colors"
+
+html
+	scroll-behavior: smooth
+
+body 
+	color: $colorSite
+	font-size: 14px
+	//font-family: Hind, sans-serif
+	position: relative
+
+ul, li 
+	margin: 0
+	padding: 0
+	list-style: none
+
+.big__title
+	font-size: 30px
+	font-weight: 700
+	line-height: 1.4
+	margin-bottom: 15px
+
+.mini__title
+	font-size: 22px
+	font-weight: 700
+	line-height: 1.4
+	margin-bottom: 15px
+
+.block__text 
+	font-size: 15px
+	margin-bottom: 15px
+	color: $colorText
+
+.link 
+	font-size: 13px
+	font-weight: 600
+	position: relative
+	color: $colorSite
+
+	&:hover
+		text-decoration: none
+		color: $colorSite
+
+.content-md 
+	padding-top: 80px
+	padding-bottom: 80px
+
+// style header start
+@import "header"
+// style header finish
+
+
+.section-banner
+	background: $bgcolor
+.banner	
+	&__leftCol
+		padding: 2px
+
+	&__rightCol
+		padding: 2px
+
+	&__item
+		position: relative
+		margin-bottom: 2px
+
+		&:hover 
+			.banner__text
+				display: block
+
+			.banner__link
+				background: rgba(0, 0, 0, 0.5)
+	
+	&__link
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		transition: all .5s ease
+	&__img
+		max-width: 567px
+		width: 100%
+	
+	&__text
+		position: absolute
+		bottom: 0
+		display: none
+		z-index: 9
+		padding: 25px
+
+	&__title
+		font-size: 22px
+		font-weight: 700
+		color: $colorWhite	
+		margin-bottom: 5px
+		line-height: 1.4
+	
+	&__subtitle
+		font-size: 15px
+		color: $colorWhite
+
+// style support start
+@import "support"
+// style support finish
+
+
+
+// style our_client start
+@import "our_client"
+// style our_client finish
+
+.section-work
+	background: $bgcolor
+
+	.site__work
+		&__item 
+			padding: 2px
+
+	.banner__img
+		max-width: 100%
+		width: 100%
+
+.site__customer
+	.slider__item 
+		position: relative
+		margin-left: 20px
+		padding: 10px 20px
+		&:before
+			content: ''
+			position: absolute
+			top: 14px
+			font-size: 60px
+			color: #17bed2
+			right: -30px
+			background: url(../images/after.png) no-repeat
+			width: 20px
+			height: 20px
+	
+	.autor__name 
+		font-weight: 700
+
+.section-team 
+	background: $bgcolor
+
+.site__team
+	&__pic
+		margin-bottom: 20px
+		img
+			width: 100%
+
+	&__link
+		color: $colorSite
+		
+		&:hover
+			text-decoration: none
+			color: $colorLinkHover
+	.autor__work
+		font-size: 14px
+		color: #bfc1c7
+		margin-left: 20px
+		font-weight: 400
+
+	.link:after
+		position: absolute
+		content: ""	
+		background: #17bed2
+		height: 2px
+		width: 9px
+		top: 49%
+		right: -15px
+
+@import 'footer'
+
+.scroll_top 
+	position: fixed
+	bottom: 20px
+	right: 10px
+	height: 40px
+	width: 40px
+	background: $colorSite
+	border-radius: 3px
+	text-align: center
+	line-height: 40px
+	color: $colorWhite
+	text-transform: uppercase
+	font-size: 12px
+	opacity: 0.6
+	transition: all 0.3s ease
+	//display: none
+
+	&:hover
+		color: $colorWhite
+		text-decoration: none
+		opacity: 1
+
+
+
+// page about
+.about
+	&__content
+		&__title
+			margin-bottom: 20px
+
+// end page about
+
+// page contact
+.map-container
+	overflow: hidden
+	position: relative
+	height: 0
+
+.map-container iframe
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	position: absolute
+
+.contact
+	border-bottom: 1px solid #edf0f2
+	&__item
+		.mini__title
+			a 
+				color: $colorSite
+				&:hover
+					text-decoration: none
+					color: $colorLinkHover
+			span 
+				font-size: 14px
+				margin-left: 20px
+				color: #bfc1c7
+				font-weight: 400
+	&__list
+		li
+			color: #81848f
+			font-size: 13px
+
+	&__form
+		border-bottom: 1px solid #edf0f2
+		form
+			.form-group
+				input
+					height: 50px
+					font-size: 14px
+					color: #a6a7aa
+					outline: none
+
+					&:focus
+						border: 1px solid #ced4da
+						box-shadow: none
+				textarea:focus
+					border: 1px solid #ced4da
+					box-shadow: none
+			button
+				font-size: 13px	
+				background: #17bed2
+				border: none
+				padding: 12px 30px
+
+.icon-call-out:after
+	content: "\e046"
+
+.icon-envelope:after
+	content: "\e086"
+// end page contact	
+
+// media
+
+@import "media"
+
+

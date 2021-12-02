@@ -1,0 +1,33 @@
+.header 
+	.navbar	
+		padding: 19px 0
+
+		.nav-item.active
+			position: relative 
+
+			&:after
+				content: ""
+				position: absolute
+				background: #17bed2
+				height: 2px
+				width: 9px
+				top: 50%
+				left: 0
+			
+			a
+				color: $colorLinkHover
+
+
+		.nav-link
+			font-size: 13px
+			position: relative
+			text-transform: uppercase
+			color: $colorSite
+			font-weight: 600
+			padding: 20px
+
+			&__last
+				padding-right: 0
+
+			&:hover
+				color: $colorLinkHover

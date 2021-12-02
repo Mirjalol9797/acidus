@@ -1,0 +1,91 @@
+@media all and (max-width: 991px)
+	.toggle-icon
+		position: relative
+		width: 16px
+		background: $colorSite
+		height: 1px
+			
+		&:after
+			width: 10px
+			height: 1px
+			content: ""
+			position: absolute
+			background: $colorSite
+			top: -5px
+			left: 0	
+		&:before
+			width: 22px
+			height: 1px
+			content: ""
+			position: absolute
+			background: $colorSite	
+			top: 5px
+			left: 0
+	.navbar-toggler:focus, .navbar-toggler:hover
+		border: none
+		outline: none
+
+	
+	.header 
+		.navbar	
+			padding: 35px 0
+
+		.navbar-nav
+			padding-top: 25px
+
+@media all and (max-width: 767px) 
+	.container
+		max-width: 100%
+		padding-left: 20px
+		padding-right: 20px
+
+	.content-md
+		padding-top: 40px
+		padding-bottom: 40px
+
+	.support__item
+		margin-bottom: 35px	
+
+	.footer__list
+		margin-bottom: 40px
+
+	.site__team
+		&__item
+			display: inline-block
+			.link
+				display: inline-block !important
+
+		.link
+			margin-bottom: 30px
+			display: block
+
+	.about__content__text
+		margin-bottom: 40px
+
+	.contact__item	
+		margin-bottom: 35px
+
+@media all and (max-width: 425px)
+	.slick-slide 
+		img
+			margin: auto
+
+	.content-md
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.footer__bottom
+		&__df
+			flex-direction: column
+
+		&__logo
+			flex: 0 0 100%
+			max-width: 100%
+			margin-bottom: 15px
+			text-align: center
+
+		&__copyright
+			flex: 0 0 100%
+			max-width: 100%
+			margin-bottom: 15px
+			text-align: center !important
